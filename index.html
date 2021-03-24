@@ -3,11 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Project: Test webpage</title>
+    <style type="text/css">
+      
+    </style>
   </head>
   <body>
     <h1>This a test webpage...</h1>
   
     <p> This is an acutal testpage that shows some text...</p>
     <img src="https://sv.wikipedia.org/wiki/M%C3%A4laren#/media/Fil:La3-demis-malaren.png" alt="A picture" width="200"/>
+    <canvas id="pageCanvas" tabindex="0" width="400" height="400" style="image-rendering: -webkit-optimize-contrast !important;">
+    <script src="processing.js"></script>
+    <script src="source.js"></script>
+    <script type="application/javascript">
+      var canvas = document.getElementById("pageCanvas");
+      var processingInstance = new Processing(canvas, jsMain);
+    </script>
+    <span style="position: absolute; top: 0px; left: 0px; opacity: 0; font-family: PjsEmptyFont, fantasy;">AAAAAAAA</span>
   </body>
 </html>
